@@ -33,7 +33,7 @@ void SortDescendingArray(int[,] arrayDescending)
       {
          for (var k = 0; k < arrayDescending.GetLength(1); k++)
          {
-            if (arrayDescending[i, j] < arrayDescending[i, k]) continue;
+            if (arrayDescending[i, j] <= arrayDescending[i, k]) continue;
             int temp = arrayDescending[i, j];
             arrayDescending[i, j] = arrayDescending[i, k];
             arrayDescending[i, k] = temp;
